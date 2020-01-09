@@ -6,7 +6,7 @@
 #include <iostream>
 #include <bits/stdc++.h> 
 
-
+// Benchmarking
 void benchmark(const char* model_name, int img_size, int batch_size, int iterations) {
     torch::NoGradGuard no_grad;
     std::cout << "-> Loading model: " << model_name << "...\n";
