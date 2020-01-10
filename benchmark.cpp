@@ -49,8 +49,10 @@ int main(int argc, char *argv[]) {
     int batchSize = std::stoi(argv[3]);
     int iterations = 10000;
     // If the number of iterations is explicitly set i.e. argument 4
-    if(argc == 4){
+    if(argc == 5){
         iterations = std::stoi(argv[4]);
+        std::cout << "-> custom number of iterations: " << iterations << std::endl;
+        
     }
     
     benchmark(argv[1], imgSize, batchSize, iterations);
